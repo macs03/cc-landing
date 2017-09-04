@@ -1,0 +1,10 @@
+@import "../../utilities";
+.no-mobile-menu {
+  display: flex;
+  @include breakpoint(phablet) {
+    display: none;
+  }
+  @include breakpoint(mobileonly) {
+    display: none;
+  }
+}

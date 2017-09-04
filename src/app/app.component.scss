@@ -1,1 +1,16 @@
+@import "utilities";
 
+.header-all {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: $Position;
+  color: $MessYellow;
+  font-family: $Lobster, cursive;
+  font-weight: normal;
+}
+
+.example-sidenav {
+  background: $SimpleGray;
+}

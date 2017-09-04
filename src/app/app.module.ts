@@ -11,13 +11,14 @@ import {
   RouterLinkActive
 } from "@angular/router";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MaterialModule } from "./material.module";
+import { MaterialModule } from "./material";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LandingComponent } from "./components/landing/landing.component";
 import { ProvidersComponent } from "./components/providers/providers.component";
+import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: "full" },
@@ -32,7 +33,8 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     LandingComponent,
-    ProvidersComponent
+    ProvidersComponent,
+    SideNavbarComponent
   ],
   imports: [
     BrowserModule,

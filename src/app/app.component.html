@@ -1,24 +1,15 @@
 <md-sidenav-container class="example-container">
   <md-sidenav mode="push" #sidenav class="example-sidenav">
-    <aside>
-      <nav>
-        <ul>
-          <li>
-            <a routerLink="/" routerLinkActive="active">Inicio</a>
-          </li>
-          <li>
-            <a routerLink="/providers" routerLinkActive="active">Proveedores</a>
-          </li>
-        </ul>
-      </nav>
-    </aside>
+    <app-side-navbar></app-side-navbar>
   </md-sidenav>
   <div class="example-sidenav-content">
-    <button type="button" md-button (click)="sidenav.open()">
-        <md-icon>home</md-icon>
-    </button>
-    <app-header></app-header>
+    <div class="header-all">
+      <button type="button" md-button (click)="sidenav.open()">
+            <md-icon>menu</md-icon>
+        </button>
+      <app-header></app-header>
+    </div>
     <router-outlet></router-outlet>
-    <app-footer></app-footer>
   </div>
+  <app-footer class="footer"></app-footer>
 </md-sidenav-container>

@@ -1,0 +1,18 @@
+@import "../../utilities";
+aside {
+  background: $SimpleGray;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  a {
+    button {
+      width: 100%;
+      text-align: left;
+      color: $Meulnes;
+      font-family: $Lobster, cursive;
+      font-weight: normal;
+    }
+  }
+}

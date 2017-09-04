@@ -1,0 +1,36 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i|Oswald:400,500,600,700');
+$Oswal: "Oswald";
+$Lobster: "Lobster Two";
+
+//colors
+$MessYellow: #9b8001;
+$Position: #171300;
+$SimpleGray: #252524;
+$Crop: #4e420d;
+$Meulnes: #d4c786;
+
+//breakpoints
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) {
+      @content;
+    }
+  } @else if $point == laptop {
+    @media (min-width: 64em) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 50em) {
+      @content;
+    }
+  } @else if $point == phablet {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  } @else if $point == mobileonly {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+}
