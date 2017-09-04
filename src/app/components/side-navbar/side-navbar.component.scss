@@ -1,6 +1,13 @@
 @import "../../utilities";
 aside {
   background: $SimpleGray;
+  .logo {
+    background: $Position;
+    height: 84.5px;
+    p {
+      margin: 0;
+    }
+  }
 }
 nav {
   display: flex;

@@ -3,4 +3,64 @@ h1,
 h2,
 h3 {
   color: $MessYellow;
+  font-family: $Lobster, cursive;
+  font-weight: normal;
+}
+
+p {
+  font-family: $Oswal, cursive;
+  font-weight: normal;
+}
+
+section {
+  padding: 2em;
+  color: $Position;
+}
+
+#nosotros {
+  .somos,
+  .vision {
+    text-align: left;
+  }
+  .mision,
+  .objetivos {
+    text-align: right;
+  }
+}
+
+#planes {
+  .basic {
+    text-align: left;
+  }
+  .gold {
+    text-align: right;
+  }
+}
+
+#contacto {
+  .address {
+    text-align: center;
+  }
+}
+
+#beneficios,
+#confian {
+  background: $Position;
+  p {
+    color: $Meulnes;
+    text-align: justify;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3em;
+  a {
+    color: $Meulnes;
+  }
+  a:hover {
+    color: $MessYellow;
+  }
 }

@@ -18,7 +18,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LandingComponent } from "./components/landing/landing.component";
 import { ProvidersComponent } from "./components/providers/providers.component";
-import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
+import { SideNavbarComponent } from "./components/side-navbar/side-navbar.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: "full" },

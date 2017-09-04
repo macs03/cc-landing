@@ -1,0 +1,23 @@
+@import "../../utilities";
+footer {
+  background: $Position;
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $Meulnes;
+    font-family: $Lobster, cursive;
+    font-weight: normal;
+  }
+}
+
+.powered {
+  font-family: $Oswal, cursive;
+  font-weight: normal;
+  color: #3c3a3a;
+  text-align: center;
+  p {
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+  }
+}
