@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { MdSnackBar } from "@angular/material";
 
 @Component({
   selector: "app-providers",
@@ -14,8 +15,9 @@ export class ProvidersComponent implements OnInit {
   codigo = "#Providers-VIP";
   code: string = "";
 
-  constructor(private router: Router) {
+  constructor(private router: Router, public snackBar: MdSnackBar) {
     this.router = router;
+    this, (snackBar = snackBar);
   }
 
   ngOnInit() {
@@ -49,6 +51,10 @@ export class ProvidersComponent implements OnInit {
   compareCode() {
     if (this.code === this.codigo) {
       this.router.navigate(["/providers-landing"]);
+    } else {
+      this.snackBar.open("Codigo erroneo intenta de nuevo", "Cerrar", {
+        duration: 2000
+      });
     }
   }
 }
