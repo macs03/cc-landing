@@ -1,10 +1,12 @@
 @import "../../utilities";
 h1,
 h2,
-h3 {
+h3,
+.title {
   color: $MessYellow;
   font-family: $Lobster, cursive;
   font-weight: normal;
+  text-decoration: none;
 }
 
 p {
