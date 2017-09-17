@@ -31,9 +31,27 @@ section {
 #planes {
   .basic {
     text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    figure {
+      margin: 0;
+      img {
+        width: 150px;
+      }
+    }
   }
   .gold {
     text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    figure {
+      margin: 0;
+      img {
+        width: 150px;
+      }
+    }
   }
 }
 
