@@ -1,0 +1,10 @@
+<div id="convenios-modal">
+  <h3 md-dialog-title>{{data.title}}</h3>
+  <div md-dialog-content>
+    <ul>
+      <li *ngFor="let beneficio of data.beneficios">
+        {{beneficio}}
+      </li>
+    </ul>
+  </div>
+</div>
