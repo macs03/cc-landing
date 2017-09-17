@@ -1,3 +1,10 @@
-<p>
-  providers works!
-</p>
+<section id="providers-login">
+  <div class="form">
+    <div class="inputs">
+      <h3>Por favor ingresa el codigo de proveedor</h3>
+      <input type="password" [(ngModel)]="code" #ctrl="ngModel" name="code" placeholder="Código">
+      <button (click)="compareCode()">Ok!</button>
+    </div>
+  </div>
+  <particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+</section>
