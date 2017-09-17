@@ -49,6 +49,9 @@ section {
         width: 150px;
       }
     }
+    @include breakpoint(desktop) {
+      width: 50%;
+    }
   }
   .gold {
     text-align: right;
@@ -60,6 +63,10 @@ section {
       img {
         width: 150px;
       }
+    }
+    @include breakpoint(desktop) {
+      width: 50%;
+      margin-left: 50%;
     }
   }
 }
