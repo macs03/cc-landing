@@ -22,10 +22,17 @@ section {
   .somos,
   .vision {
     text-align: left;
+    @include breakpoint(desktop) {
+      width: 50%;
+    }
   }
   .mision,
   .objetivos {
     text-align: right;
+    @include breakpoint(desktop) {
+      width: 50%;
+      margin-left: 50%;
+    }
   }
 }
 
@@ -130,9 +137,22 @@ section {
         img {
           width: 245px;
           height: 150px;
+          @include breakpoint(desktop) {
+            width: 345px;
+            height: 250px;
+          }
         }
       }
     }
+    @include breakpoint(desktop) {
+      flex-direction: row;
+    }
+  }
+}
+
+.social-div {
+  @include breakpoint(desktop) {
+    text-align: center;
   }
 }
 
@@ -146,5 +166,31 @@ section {
   }
   a:hover {
     color: $MessYellow;
+  }
+  @include breakpoint(desktop) {
+    justify-content: center;
+    a {
+      margin: 0 1em;
+    }
+  }
+}
+
+@include breakpoint(desktop) {
+  h2 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+}
+
+.cell-mobile {
+  display: none;
+}
+
+@include breakpoint(mobileonly) {
+  .cell-desk {
+    display: none;
+  }
+  .cell-mobile {
+    display: block;
   }
 }

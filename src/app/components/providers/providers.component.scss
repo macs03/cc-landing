@@ -2,7 +2,10 @@
 #providers-login {
   position: relative;
   background: transparent;
-  height: 570px;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .form {
     position: absolute;
     width: 100%;
@@ -70,8 +73,15 @@
         img {
           width: 245px;
           height: 150px;
+          @include breakpoint(desktop) {
+            width: 345px;
+            height: 250px;
+          }
         }
       }
+    }
+    @include breakpoint(desktop) {
+      flex-direction: row;
     }
   }
 }
@@ -97,5 +107,32 @@ li {
   p {
     color: $Meulnes;
     text-align: justify;
+  }
+}
+
+@include breakpoint(desktop) {
+  h2 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+}
+
+#porque,
+#tarjeta,
+#beneficios,
+#paquetes,
+#comisiones,
+#alcance {
+  @include breakpoint(desktop) {
+    p {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      text-align: center;
+      li {
+        margin: 1em;
+      }
+    }
   }
 }
