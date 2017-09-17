@@ -5,7 +5,7 @@ import { Component, OnInit } from "@angular/core";
   templateUrl: "./providers-landing.component.html",
   styleUrls: ["./providers.component.scss"]
 })
-export class ProvidersComponent implements OnInit {
+export class ProvidersLandingComponent implements OnInit {
   myStyle: object = {};
   myParams: object = {};
   width: number = 100;

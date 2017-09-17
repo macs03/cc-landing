@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-providers",
@@ -13,7 +14,9 @@ export class ProvidersComponent implements OnInit {
   codigo = "#Providers-VIP";
   code: string = "";
 
-  constructor() {}
+  constructor(private router: Router) {
+    this.router = router;
+  }
 
   ngOnInit() {
     this.myStyle = {
@@ -44,9 +47,8 @@ export class ProvidersComponent implements OnInit {
   }
 
   compareCode() {
-    console.log(this.code);
     if (this.code === this.codigo) {
-      console.log("pasa");
+      this.router.navigate(["/providers-landing"]);
     }
   }
 }

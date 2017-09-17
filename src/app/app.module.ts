@@ -22,12 +22,14 @@ import {
   ConveniosDialog
 } from "./components/landing/landing.component";
 import { ProvidersComponent } from "./components/providers/providers.component";
+import { ProvidersLandingComponent } from "./components/providers/providers-landing.component";
 import { SideNavbarComponent } from "./components/side-navbar/side-navbar.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: "full" },
   { path: "", component: LandingComponent },
-  { path: "providers", component: ProvidersComponent }
+  { path: "providers", component: ProvidersComponent },
+  { path: "providers-landing", component: ProvidersLandingComponent }
 ];
 
 @NgModule({
@@ -39,6 +41,7 @@ const routes: Routes = [
     LandingComponent,
     ConveniosDialog,
     ProvidersComponent,
+    ProvidersLandingComponent,
     SideNavbarComponent
   ],
   imports: [
