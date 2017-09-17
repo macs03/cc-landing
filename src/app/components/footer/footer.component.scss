@@ -8,6 +8,15 @@ footer {
     color: $Meulnes;
     font-family: $Lobster, cursive;
     font-weight: normal;
+    a {
+      color: $Meulnes;
+      text-decoration: none;
+    }
+    figure {
+      img {
+        width: 70px;
+      }
+    }
   }
 }
 

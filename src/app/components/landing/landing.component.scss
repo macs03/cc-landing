@@ -29,6 +29,7 @@ section {
 }
 
 #planes {
+  background: "#fff";
   .basic {
     text-align: left;
     display: flex;
@@ -67,6 +68,17 @@ section {
   p {
     color: $Meulnes;
     text-align: justify;
+  }
+  .providers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    figure {
+      img {
+        width: 150px;
+      }
+    }
   }
 }
 
