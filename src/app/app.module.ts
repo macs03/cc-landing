@@ -12,6 +12,7 @@ import {
 } from "@angular/router";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MaterialModule } from "./material";
+import { ParticlesModule } from "angular-particle";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./components/header/header.component";
@@ -42,7 +43,8 @@ const routes: Routes = [
     HttpModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

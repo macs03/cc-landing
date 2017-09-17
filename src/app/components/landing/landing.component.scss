@@ -52,6 +52,31 @@ section {
   }
 }
 
+#particles {
+  position: relative;
+  background: $Position;
+  height: 550px;
+  z-index: -2;
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    .card-black,
+    .card-gold {
+      figure {
+        img {
+          width: 245px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
 .social {
   display: flex;
   justify-content: space-around;
