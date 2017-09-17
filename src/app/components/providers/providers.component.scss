@@ -49,3 +49,53 @@
     }
   }
 }
+
+// providers landing
+#particles {
+  position: relative;
+  background: $Position;
+  height: 550px;
+  z-index: -2;
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    .card-black,
+    .card-gold {
+      figure {
+        img {
+          width: 245px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+h2,
+h3 {
+  color: $MessYellow;
+  font-family: $Lobster, cursive;
+  font-weight: normal;
+  text-decoration: none;
+}
+section {
+  padding: 2em;
+  color: $Position;
+}
+p,
+li {
+  font-family: $Oswal, cursive;
+  font-weight: normal;
+}
+#tarjeta,
+#beneficios {
+  background: $Position;
+  p {
+    color: $Meulnes;
+    text-align: justify;
+  }
+}
