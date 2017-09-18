@@ -137,6 +137,12 @@ li {
   }
 }
 
+@media (max-height: 440px) {
+  #providers-login {
+    height: 250px;
+  }
+}
+
 @media (max-height: 640px) {
   #providers-login {
     height: 410px;
