@@ -136,3 +136,21 @@ li {
     }
   }
 }
+
+@media (max-height: 640px) {
+  #providers-login {
+    height: 410px;
+  }
+}
+
+@media (max-height: 533px) {
+  #providers-login {
+    height: 310px;
+  }
+}
+
+@media (min-height: 1024px) {
+  #providers-login {
+    height: 1010px;
+  }
+}
